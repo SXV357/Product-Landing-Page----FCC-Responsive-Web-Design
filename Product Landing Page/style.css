@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #000;
+    line-height: 1.25;
+}
+h3{
+    font-size: 23px;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 36px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-size: 50px;
+    color: #ff8c00;
+}
+/*Nav bar*/
+
+nav{
+    height: 100px;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.website-name{
+    padding: 0 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navigation-list{
+    display: flex;
+    justify-content: center;
+}
+.navigation{
+    margin: 0 20px;
+}
+.navigation-emphasis{
+    background: #6030b1;
+    padding: 2px 12px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/*Order form*/
+
+.container{
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    position: relative;
+}
+.order{
+    margin-bottom: 20px;
+}
+.order-input{
+    padding: 2px 35px;
+}
+.order-button{
+    background: #ffc40c;
+    padding: 5px 20px;
+    transition: all 300ms ease;
+    margin-bottom: 100px;
+    font-weight: 700;
+}
+.order-button:hover{
+    background-color: #ffaa15;
+}
+
+/*Services*/
+
+.container-2{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+.service-title-1, .service-title-2, .service-title-3{
+    font-family: Lato;
+}
+.service-1, .service-2, .service-3{
+    display: flex;
+    gap: 55px;
+}
+.service-description-1{
+    margin: 0 20px;
+}
+.service-description-3{
+    margin-bottom: 50px;
+}
+
+/*Video*/
+.demo-video{
+    max-width: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.video{
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    margin: 70px 0;
+}
+
+/*Pricing*/
+.item-prices{
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    gap: 35px;
+    margin-bottom: 45px;
+}
+.item-price-1, .item-price-2, .item-price-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 3px;
+    height: auto;
+    margin: 0 -10px;
+}
+.item-1-text, .item-2-text, .item-3-text{
+    margin: 0 40px;
+    text-align: center;
+}
+.item-1-title, .item-2-title, .item-3-title{
+    background: #d3d3d3;
+    width: 100%;
+    text-align: center;
+    padding: 11px 0;
+}
+.selection-button{
+    margin: 20px 5px;
+    padding: 10px 15px;
+    background: #ffc40c;
+    font-weight: bold; 
+    transition: all 300ms ease;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.selection-button:hover{
+    background: #ffaa15; 
+}
+
+/*Footer*/
+.footer{
+    max-width: 800px;
+    width: 100%;
+    background: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+.footer-links{
+    display: flex;
+}
+.footer-link{
+    margin: 0 20px;
+}
+
+
+/*Media queries*/
+@media (max-width: 825px)
+{
+   .container-2{
+       max-width: 500px;
+       width: 100%;
+   }
+   .demo-video{
+       width: 100%;
+       overflow: auto;
+   }
+   .video{
+       width: 500px;
+       height: 250px;
+       margin: 20px 20px;
+   }
+   h1{
+         font-size: 20px;
+   }
+}
+@media (max-width: 800px)
+{
+    .item-prices{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 550px)
+{
+    .fa-fire-flame-curved, .fa-truck, .fa-battery-full{
+        display: none;
+    }
+    .container-2{
+        text-align: center;
+    }
+    .service-description-1, .service-description-2, .service-description3{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .item-prices{
+        max-width: 300px;
+        width: 100%;
+    }
+    .link-1, .link-2{
+        display: none;
+    }
+}
+@media (max-width: 415px){
+    nav{
+        white-space: nowrap;
+    }
+    .website-name{
+        display: inline-block;
+        font-size: 17px;
+    }
+}
